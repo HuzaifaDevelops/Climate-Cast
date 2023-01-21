@@ -1,0 +1,25 @@
+.flex{
+    display: flex;
+}
+.center-vertical{
+    display: grid;
+    place-content: center;
+}
+.br{
+    border: 1px solid white;
+}
+
+.white{
+    color: #fff;
+}
+.width{
+    width: 25vw;
+}
+.justify-between{
+    display: flex;
+    justify-content: space-between;
+}
+.inline-grid{
+    display: -ms-inline-grid;
+    display: inline-grid;
+}

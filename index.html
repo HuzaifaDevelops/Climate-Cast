@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weather Forecast: Stay Ahead of the Storm with Up-to-Date Information</title>
+    <link rel="shortcut icon" href="/Resources/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="classes.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="left">
+                <div class="logo">
+                    <img src="/Resources/logo.png" alt="" width="50" height="50">
+                    <span>Climate Cast</span>
+                </div>
+                <div class="temp center-vertical white ">
+                    <div class="details">
+                        <span id="degree"></span>
+                        <span id="cityName"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="load center-vertical" id="load">
+                <img src="/Resources/loading.gif" alt="" width="50" height="50">
+            </div>
+            <div class="content">
+                <div class="inp-btn flex">
+                    <div class="form-control">
+                        <input type="value" required="" id="search">
+                        <label id="label">
+                            <span style="transition-delay:0ms">E</span>
+                            <span style="transition-delay:50ms">n</span>
+                            <span style="transition-delay:100ms">t</span>
+                            <span style="transition-delay:150ms">e</span>
+                            <span style="transition-delay:200ms">r</span>
+                            <span style="transition-delay:250ms"></span>
+                            <span style="transition-delay:300ms">L</span>
+                            <span style="transition-delay:350ms">o</span>
+                            <span style="transition-delay:400ms">c</span>
+                            <span style="transition-delay:450ms">a</span>
+                            <span style="transition-delay:500ms">t</span>
+                            <span style="transition-delay:550ms">i</span>
+                            <span style="transition-delay:600ms">o</span>
+                            <span style="transition-delay:650ms">n</span>
+                        </label>
+                    </div>
+                    <div class="btn center-vertical">
+                        <button id="searchBtn">Search</button>
+                    </div>
+
+                </div>
+
+                <div class="popular-cities white">
+                    <ul>
+                        <li id="Birmingham">Birmingham</li>
+                        <li id="Manchester">Manchester</li>
+                        <li id="New-York">New York</li>
+                        <li id="California">California</li>
+                    </ul>
+                </div>
+
+                <hr>
+
+                <div class="weather-details white width">
+                    <h3>Weather Details</h3>
+                    <div class="weather-details justify-between">
+                        <span>Cloudy Pct</span>
+                        <span id="cloud_pct"></span>
+                    </div>
+                    <div class="humidity justify-between">
+                        <span>Humidity</span>
+                        <span id="humidity"></span>
+                    </div>
+
+                    <div class="wind justify-between">
+                        <span>Wind</span>
+                        <span id="wind"></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+<script src="app.js"></script>
+
+</html>

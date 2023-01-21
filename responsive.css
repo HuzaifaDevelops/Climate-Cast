@@ -1,0 +1,57 @@
+@media (min-width:200px) and (max-width: 700px) {
+    .container {
+        display: block;
+    }
+
+    .left,
+    .content {
+        width: auto;
+        padding: 17px;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .popular-cities {
+        display: flex;
+        justify-content: center;
+    }
+
+    .width {
+        width: auto;
+    }
+
+    .form-control label span {
+        font-size: 14px;
+    }
+
+    .weather-details h3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .inp-btn {
+        justify-content: center;
+    }
+
+    hr {
+        width: auto;
+    }
+
+    .btn button {
+        height: 11vw;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width:700px) and (max-width: 900px) {
+    .form-control label span {
+        font-size: 12px;
+        min-width: none;
+    }
+    .btn button {
+        height: 5vw;
+        border-radius: 10px;
+    }
+}

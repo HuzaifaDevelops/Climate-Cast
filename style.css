@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Rubik:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+    /* border: 2px solid white; */
+    list-style: none;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(/Resources/default.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.logo {
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    color: #fff;
+    padding: 2vw;
+    padding-left: 6vw;
+    height: min-content;
+    place-items: center;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    display: grid;
+    width: 35vw;
+}
+
+.temp{
+    font-family: 'Rubik', sans-serif;
+}
+#degree{
+    font-size: 4.5em;
+}
+#cityName{
+    font-size: 2em;
+}
+
+.load{
+    display: none;
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+    width: 35vw;
+    padding-left: 4vw;
+}
+
+.form-control {
+    position: relative;
+    margin: 36px 0 40px;
+    width: 287px;
+}
+
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.form-control input:focus,
+.form-control input:valid{
+    outline: 0;
+    border-bottom-color: lightblue;
+}
+
+.form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    pointer-events: none;
+}
+
+.form-control label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    color: #fff;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus+label span,
+.form-control input:valid+label span {
+    color: lightblue;
+    transform: translateY(-30px);
+}
+
+.btn button {
+    border: none;
+    height: 3vw;
+    margin-left: 2vw;
+    padding: 8px;
+    background: #ff8900;
+    color: white;
+    cursor: pointer;
+}
+
+.popular-cities li{
+    margin-bottom: 35px;
+}
+
+.popular-cities li:hover{
+    transition: 0.3s all;
+    color: #fff;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+hr{
+    border: 1px solid #949292;
+    width: 25vw;
+}
+.weather-details h3, .cloudy, .humidity, .wind{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
