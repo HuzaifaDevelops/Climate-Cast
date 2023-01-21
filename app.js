@@ -54,6 +54,10 @@ function display(city) {
         if(data.temp == undefined){
             temp.innerHTML = "Invalid";
             temp.style.color = "red";
+            setTimeout(() => {
+                temp.style.color = "white";
+            }, 2500);
+                
             cityName.innerHTML = "";
             cloud_pct.innerHTML = "?";
             humidity.innerHTML = "?";
