@@ -12,7 +12,7 @@
 
 body {
     min-height: 100vh;
-    background-image: url(/Resources/default.jpg);
+    /* background-image: url(/Resources/default.jpg); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

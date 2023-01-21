@@ -51,11 +51,20 @@ function display(city) {
         return response.json();
     }).then((data) => {
         load.style.display = "none";
-        cloud_pct.innerHTML = data.cloud_pct + '%';
-        humidity.innerHTML = data.humidity + '%';
-        wind.innerHTML = data.wind_speed + 'Km/h';
+        if(data.temp == undefined){
+            temp.innerHTML = "Invalid";
+            temp.style.color = "red";
+            cityName.innerHTML = "";
+            cloud_pct.innerHTML = "?";
+            humidity.innerHTML = "?";
+            wind.innerHTML = "?";
+        } else{
+            cloud_pct.innerHTML = data.cloud_pct + '%';
+            humidity.innerHTML = data.humidity + '%';
+            wind.innerHTML = data.wind_speed + 'Km/h';
         temp.innerHTML = data.temp + '°';
         cityName.innerHTML = city;
+        }
         if (data.temp < 0) {
             document.body.style.backgroundImage = "url('/Resources/snow.jpg')";
         }
